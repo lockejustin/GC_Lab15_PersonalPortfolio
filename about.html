@@ -1,0 +1,49 @@
+<html>
+<head>
+    <link href="Main.css" rel="stylesheet"/>
+    <title>Justin Locke - About</title>
+</head>
+
+<body>
+    <header>
+    <h1 class="headerFormat" class="sticky">Justin Locke - About Me</h1>
+    <h3 class="sticky" class="headerFormat"><a href="home.html">Home</a></h3>
+    <h3 class="sticky" class="headerFormat"><a href="portfolio.html">Portfolio</a></h3>
+    </header>
+
+    <h4>Personal Information</h4>
+    <ul>
+        <li>Name: Justin Locke</li>
+        <li>City: Grand Rapids, MI</li>
+        <li>Email: <a href="mailto:justin.d.locke@gmail.com">justin.d.locke@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/justin-locke-59260a189/">Justin Locke</a></li>
+        <li>Phone Number: (231) 903-7992</li>
+    </ul>
+
+    <h4>Grand Circus Grand Rapids</h4>
+    
+    <div id="map"></div>
+    <script>
+    function initMap() {
+        var uluru = {lat: 42.965896, lng: -85.669365};
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 15, center: uluru});
+        var marker = new google.maps.Marker({position: uluru, map: map});
+      }
+    </script>
+    
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK--X9lJzzuq9BNW_v-0mR-caJOZyKW8w&callback=initMap">
+    </script>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.589221647412!2d-85.67152178384482!3d42.965860204619545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819ad0c2605e461%3A0x3b6483a366620b8f!2sGrand%20Circus!5e0!3m2!1sen!2sus!4v1597709808486!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+    <footer>
+        <p>Author: Justin Locke</p>
+        <p><a href="mailto:justin.d.locke@gmail.com">Email Me</a></p>
+        <p><a href="https://www.linkedin.com/in/justin-locke-59260a189/" target="_blank">LinkedIn</a></p>
+        <p>Copyright 2020</p>
+    </footer>
+</body>
+</html>
